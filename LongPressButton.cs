@@ -7,7 +7,7 @@ public class LongPressButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     public UnityEvent OnLongPress = new UnityEvent();
 
     [Tooltip("The length of time in seconds the button must be pressed before onLongPress is invoked.")]
-    [Min(0f)][SerializeField] private float holdTime = 3f;
+    [Min(0f)][SerializeField] private float holdTime;
     
     public void OnPointerDown(PointerEventData eventData)
     {
